@@ -2,7 +2,7 @@
 name: Ellen Mohr
 year: 2025
 excerpt: "Embodies what every coach wants in a player — her spirit, attitude, and leadership abilities made her a standout and a great teammate."
-photo: /assets/img/scholars/ellen-mohr.jpg
+photo: /assets/default.jpg
 ---
 
 ## High School
