@@ -89,8 +89,8 @@ description: The Judge Waddell Endowed Scholarship Fund honors Highlands student
       <p>Each year, an Advisory Committee selects a Highlands student-athlete who exemplifies the Judge's values.</p>
     </div>
     <div class="scholars-grid">
-      {% assign recent_scholars = site.scholars | sort: "year" | reverse %}
-      {% for scholar in recent_scholars limit 3 %}
+      {% assign recent_scholars = site.scholars | sort: "year" | reverse | slice: 0, 3 %}
+      {% for scholar in recent_scholars %}
         {% include scholar-card.html scholar=scholar %}
       {% endfor %}
     </div>
