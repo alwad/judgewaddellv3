@@ -1,0 +1,40 @@
+<header class="site-header" id="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+      <a href="{{ '/' | relative_url }}" class="site-logo">
+        <span class="site-logo__mark">W</span>
+        <span class="site-logo__text">
+          <strong>Judge Waddell</strong>
+          <em>Endowed Scholarship Fund</em>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="site-nav__list">
+          <li class="site-nav__item site-nav__item--dropdown">
+            <button class="site-nav__link site-nav__link--parent">About <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+            <ul class="site-nav__dropdown">
+              <li><a href="{{ '/about/' | relative_url }}" class="site-nav__dropdown-link">The Judge</a></li>
+              <li><a href="{{ '/scholarship/' | relative_url }}" class="site-nav__dropdown-link">Scholarship</a></li>
+              <li><a href="{{ '/scholars/' | relative_url }}" class="site-nav__dropdown-link">Meet the Scholars</a></li>
+              <li><a href="{{ '/news/' | relative_url }}" class="site-nav__dropdown-link">News &amp; Blog</a></li>
+            </ul>
+          </li>
+          <li class="site-nav__item site-nav__item--dropdown">
+            <button class="site-nav__link site-nav__link--parent">Foundation <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+            <ul class="site-nav__dropdown">
+              <li><a href="{{ '/donate/' | relative_url }}" class="site-nav__dropdown-link">Donate</a></li>
+              <li><a href="{{ '/books/' | relative_url }}" class="site-nav__dropdown-link">Book Orders</a></li>
+            </ul>
+          </li>
+          <li class="site-nav__item"><a href="{{ '/contact/' | relative_url }}" class="site-nav__link">Contact</a></li>
+          <li class="site-nav__item site-nav__item--cta"><a href="{{ '/donate/' | relative_url }}" class="btn btn--gold">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

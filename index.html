@@ -1,0 +1,155 @@
+---
+layout: default
+title: Home
+description: The Judge Waddell Endowed Scholarship Fund honors Highlands student-athletes who demonstrate athleticism, character, and intellect, and intend to pursue careers in education.
+---
+
+<!-- Deadline Banner -->
+<div class="deadline-banner">
+  📋 2026 Scholarship applications are open — <a href="/assets/pdf/2026Application.pdf">download the application</a>. Deadline: March 13, 2026.
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="container">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Est. in honor of Judge C.W. Waddell</p>
+      <h1 class="hero__title">Athleticism. Character.<br><em>Intellect.</em></h1>
+      <p class="hero__subtitle">
+        The Judge Waddell Endowed Scholarship Fund supports Highlands student-athletes who exemplify the values of their coach, teacher, and mentor — and who intend to carry those values into careers in education.
+      </p>
+      <div class="hero__actions">
+        <a href="/scholarship/" class="btn btn--gold btn--lg">Apply for the Scholarship</a>
+        <a href="/about/" class="btn btn--outline-gold btn--lg">Meet the Judge</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Pillars -->
+<section class="mission-strip">
+  <div class="container">
+    <div class="mission-strip__grid">
+      <div class="mission-pillar">
+        <div class="mission-pillar__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3 class="mission-pillar__title">Team Athletics</h3>
+        <p class="mission-pillar__text">Honoring student-athletes who lead with character on and off the field, embodying the team-first spirit Judge Waddell instilled.</p>
+      </div>
+      <div class="mission-pillar">
+        <div class="mission-pillar__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3 class="mission-pillar__title">Academic Excellence</h3>
+        <p class="mission-pillar__text">Recognizing scholars who pursue intellectual growth with the same discipline and determination they bring to competition.</p>
+      </div>
+      <div class="mission-pillar">
+        <div class="mission-pillar__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3 class="mission-pillar__title">Teaching &amp; Coaching</h3>
+        <p class="mission-pillar__text">Investing in those who will become the next generation of teachers, coaches, and mentors — following the Judge's own example.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About the Judge -->
+<section class="home-about">
+  <div class="container">
+    <div class="home-about__grid">
+      <div class="home-about__img">
+        <img src="/assets/img/Waddell-1967-page-2-slider.png" alt="Judge C.W. Waddell" />
+      </div>
+      <div class="home-about__text-col">
+        <div class="section-header">
+          <p class="section-header__eyebrow">The Judge</p>
+          <h2>Coach. Mentor. Legend.</h2>
+        </div>
+        <p class="home-about__text">
+          Judge C.W. Waddell was a towering figure in Northern Kentucky athletics and education — a man whose influence on his players extended far beyond the field. He produced coaches who went on to shape generations of student-athletes, including Homer Rice, who built on the Judge's "Total Person" philosophy into a nationally recognized program at Georgia Tech.
+        </p>
+        <p class="home-about__text">
+          The scholarship bears his name as a tribute to his belief that athletics, academics, and character are inseparable — and that the greatest outcome of sport is the creation of better teachers, coaches, and citizens.
+        </p>
+        <a href="/about/" class="btn btn--navy">Read his story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Scholars -->
+<section class="home-scholars">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="section-header__eyebrow">Waddell Scholars</p>
+      <h2>Recent Recipients</h2>
+      <p>Each year, an Advisory Committee selects a Highlands student-athlete who exemplifies the Judge's values.</p>
+    </div>
+    <div class="scholars-grid">
+      {% assign recent_scholars = site.scholars | sort: "year" | reverse | limit: 3 %}
+      {% for scholar in recent_scholars %}
+        {% include scholar-card.html scholar=scholar %}
+      {% endfor %}
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="/scholars/" class="btn btn--outline-gold">View all scholars</a>
+    </div>
+  </div>
+</section>
+
+<!-- Donate CTA -->
+<section class="home-donate">
+  <div class="container">
+    <div class="home-donate__inner">
+      <div class="section-header section-header--centered">
+        <p class="section-header__eyebrow">Support the Fund</p>
+        <h2 class="home-donate__title">Help Shape the Next Generation</h2>
+      </div>
+      <p class="home-donate__text">
+        Your gift sustains a permanent endowment managed by the Northern Kentucky Fund of the Greater Cincinnati Foundation. Every contribution helps us honor Judge Waddell's legacy and invest in the teachers and coaches of tomorrow.
+      </p>
+      <a href="/donate/" class="btn btn--navy btn--lg">Donate to the Fund</a>
+    </div>
+  </div>
+</section>
+
+<!-- Latest News -->
+<section class="home-news">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-header__eyebrow">News &amp; Updates</p>
+      <h2>Latest from the Fund</h2>
+    </div>
+    <ul class="post-list">
+      {% for post in site.posts limit:3 %}
+      <li class="post-list__item">
+        <div class="post-list__date">
+          <span class="post-list__date-month">{{ post.date | date: "%b" }}</span>
+          <span class="post-list__date-day">{{ post.date | date: "%-d" }}</span>
+        </div>
+        <div>
+          <h3 class="post-list__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="post-list__excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <div style="margin-top:2rem;">
+      <a href="/news/" class="btn btn--outline">All news &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- Partners -->
+<section class="partners">
+  <div class="container">
+    <p class="partners__title">In association with</p>
+    <div class="partners__logos">
+      <img src="/assets/img/gcf-large.png" alt="Greater Cincinnati Foundation" />
+      <img src="/assets/img/hh-logo2.png" alt="Highlands High School" />
+    </div>
+  </div>
+</section>

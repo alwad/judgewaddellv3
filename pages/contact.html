@@ -1,0 +1,83 @@
+---
+layout: default
+title: Contact
+description: Get in touch with the Judge Waddell Endowed Scholarship Fund.
+permalink: /contact/
+---
+
+<div style="background: var(--navy); padding: 4rem 0 3rem;">
+  <div class="container">
+    <p style="font-family: var(--font-ui); font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin-bottom:.75rem;">Get in Touch</p>
+    <h1 style="color:white;">Contact the Fund</h1>
+  </div>
+</div>
+
+<div class="contact-page">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div>
+        <h2>Send a Message</h2>
+        <p style="color:var(--gray-700); margin-bottom:2rem;">Use the form below for scholarship questions, donation inquiries, or general correspondence.</p>
+
+        <!-- Netlify / Formspree form — replace action with your endpoint -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic…</option>
+              <option>Scholarship Application</option>
+              <option>Donation</option>
+              <option>Book Orders</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Your message here…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--navy">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <h2>Contact Directory</h2>
+        <div style="display:flex; flex-direction:column; gap:1.5rem; margin-top:1.5rem;">
+
+          <div style="padding:1.4rem; background:var(--white); border-radius:8px; box-shadow: var(--shadow); border-top: 3px solid var(--gold);">
+            <h4>Fund Administrator</h4>
+            <p style="margin-top:.5rem;"><strong>Julie Dierker</strong><br>720 E. Pete Rose Way</p>
+          </div>
+
+          <div style="padding:1.4rem; background:var(--white); border-radius:8px; box-shadow: var(--shadow); border-top: 3px solid var(--gold);">
+            <h4>Chairman</h4>
+            <p style="margin-top:.5rem;"><strong>William Waddell</strong><br><a href="tel:7573738664">(757) 373-8664</a></p>
+          </div>
+
+          <div style="padding:1.4rem; background:var(--white); border-radius:8px; box-shadow: var(--shadow); border-top: 3px solid var(--gold);">
+            <h4>Vice Chairman</h4>
+            <p style="margin-top:.5rem;"><strong>Phillip Waddell</strong><br><a href="mailto:pwaddell@covenantescrow.com">pwaddell@covenantescrow.com</a></p>
+          </div>
+
+          <div style="padding:1.4rem; background:var(--gold-pale); border-radius:8px;">
+            <h4>Partner Organizations</h4>
+            <ul style="list-style:none; margin-top:.5rem; display:flex; flex-direction:column; gap:.4rem;">
+              <li><a href="https://www.gcfdn.org/" target="_blank" rel="noopener">Greater Cincinnati Foundation</a></li>
+              <li><a href="https://hhs.fortthomas.kyschools.us/" target="_blank" rel="noopener">Highlands High School</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+---
+layout: default
+title: Waddell Scholars
+description: Meet the Highlands student-athletes honored by the Judge Waddell Endowed Scholarship Fund.
+permalink: /scholars/
+---
+
+<div class="scholars-page__hero">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-header__eyebrow">Our Recipients</p>
+      <h1>Waddell Scholars</h1>
+      <p>Each recipient is chosen by an Advisory Committee that knows and loves the Highlands tradition — student-athletes who demonstrate athleticism, character, and intellect, and intend to pursue careers in education.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="padding-bottom: 5rem;">
+  <div class="scholars-grid">
+    {% assign scholars = site.scholars | sort: "year" | reverse %}
+    {% for scholar in scholars %}
+      {% include scholar-card.html scholar=scholar %}
+    {% endfor %}
+  </div>
+</div>

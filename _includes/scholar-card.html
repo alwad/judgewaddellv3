@@ -1,0 +1,23 @@
+<article class="scholar-card">
+  {% if include.scholar.photo %}
+  <div class="scholar-card__photo">
+    <a href="{{ include.scholar.url | relative_url }}">
+      <img src="{{ include.scholar.photo | relative_url }}" alt="{{ include.scholar.name }}" loading="lazy" />
+    </a>
+  </div>
+  {% else %}
+  <div class="scholar-card__photo scholar-card__photo--placeholder">
+    <span>{{ include.scholar.name | slice: 0 }}</span>
+  </div>
+  {% endif %}
+  <div class="scholar-card__body">
+    <span class="scholar-card__year">{{ include.scholar.year }}</span>
+    <h3 class="scholar-card__name">
+      <a href="{{ include.scholar.url | relative_url }}">{{ include.scholar.name }}</a>
+    </h3>
+    {% if include.scholar.excerpt %}
+    <p class="scholar-card__excerpt">{{ include.scholar.excerpt }}</p>
+    {% endif %}
+    <a href="{{ include.scholar.url | relative_url }}" class="scholar-card__link">Read more &rarr;</a>
+  </div>
+</article>

@@ -1,0 +1,53 @@
+title: Judge Waddell Endowed Scholarship Fund
+description: Honoring athleticism, character, and intellect — encouraging the teachers, coaches, and mentors so important to the next generation.
+baseurl: ""
+url: "https://www.judgewaddell.org"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Collections
+collections:
+  scholars:
+    output: true
+    permalink: /scholars/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "scholars"
+    values:
+      layout: "scholar"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+nav_links:
+  - title: About
+    children:
+      - title: The Judge
+        url: /about/
+      - title: Scholarship
+        url: /scholarship/
+      - title: Meet the Scholars
+        url: /scholars/
+      - title: News & Blog
+        url: /news/
+  - title: Foundation
+    children:
+      - title: Donate
+        url: /donate/
+      - title: Book Orders
+        url: /books/
+  - title: Contact
+    url: /contact/

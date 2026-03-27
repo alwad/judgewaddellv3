@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="scholar-profile">
+  <div class="scholar-hero">
+    <div class="container">
+      <div class="scholar-hero__inner">
+        {% if page.photo %}
+        <div class="scholar-hero__photo">
+          <img src="{{ page.photo | relative_url }}" alt="{{ page.name }}" />
+        </div>
+        {% endif %}
+        <div class="scholar-hero__info">
+          <span class="scholar-hero__year">{{ page.year }} Scholar</span>
+          <h1 class="scholar-hero__name">{{ page.name }}</h1>
+          {% if page.sport %}<p class="scholar-hero__sport">{{ page.sport }}</p>{% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="scholar-body">
+      {{ content }}
+    </div>
+  </div>
+</article>

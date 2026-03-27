@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header container">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.categories %}<span class="post-category">{{ page.categories | first }}</span>{% endif %}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+  <div class="post-content container">
+    {{ content }}
+  </div>
+  <div class="post-footer container">
+    <a href="{{ '/news/' | relative_url }}" class="btn btn--outline">&larr; Back to News</a>
+  </div>
+</article>

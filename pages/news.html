@@ -1,0 +1,39 @@
+---
+layout: default
+title: News & Blog
+description: News and updates from the Judge Waddell Endowed Scholarship Fund.
+permalink: /news/
+---
+
+<div style="background: var(--navy); padding: 4rem 0 3rem;">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-header__eyebrow">From the Fund</p>
+      <h1 style="color:white;">News &amp; Blog</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="padding: 3.5rem 0 5rem;">
+  {% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-list__item">
+      <div class="post-list__date">
+        <span class="post-list__date-month">{{ post.date | date: "%b" }}</span>
+        <span class="post-list__date-day">{{ post.date | date: "%-d" }}</span>
+      </div>
+      <div>
+        <h2 class="post-list__title" style="font-size:1.2rem;">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-list__excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+        <a href="{{ post.url | relative_url }}" style="font-family: var(--font-ui); font-size:.8rem; color:var(--gold); font-weight:500;">Read more &rarr;</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="color: var(--gray-700);">No posts yet. Check back soon.</p>
+  {% endif %}
+</div>
