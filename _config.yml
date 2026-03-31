@@ -15,6 +15,9 @@ collections:
   contacts:
     output: true
     permalink: /Contact/:name/
+  posts:
+    output: true
+    permalink: /News/:name/
     
 # Defaults
 defaults:
