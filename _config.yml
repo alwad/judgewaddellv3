@@ -12,8 +12,6 @@ collections:
   scholars:
     output: true
     permalink: /scholars/:name/
-
-collections:
   contacts:
     output: true
     permalink: /Contact/:name/
