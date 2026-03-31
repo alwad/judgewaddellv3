@@ -28,7 +28,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-
+  - scope:
+      path: ""
+      type: "contacts"
+    values:
+      layout: "contact"
+      
 # Plugins
 plugins:
   - jekyll-feed
