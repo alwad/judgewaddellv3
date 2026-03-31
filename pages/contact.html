@@ -1,34 +1,103 @@
 ---
-title: Contact Us
 layout: default
+title: Contact Us
 permalink: /contact/
 ---
 
-<div class="contact-page">
-  <h1>Our Advisory Committee & Contacts</h1>
-  <p class="intro">The Judge Waddell Endowed Scholarship Fund is guided by dedicated advisory committee members, scholarship leadership, and professional support.</p>
-
-  <div class="contacts-grid">
-    {% for contact in site.contacts %}
-      <div class="contact-card">
-        <h2>{{ contact.name }}</h2>
-        {% if contact.title %}<p class="title">{{ contact.title }}</p>{% endif %}
-        
-        {% if contact.organization %}<p class="org">{{ contact.organization }}</p>{% endif %}
-        
-        <div class="contact-details">
-          {% if contact.address %}<p class="address">{{ contact.address | replace: "\n", "<br>" }}</p>{% endif %}
-          
-          {% if contact.phone %}<p class="phone">📞 <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>{% endif %}
-          
-          {% if contact.email %}<p class="email">✉️ <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>{% endif %}
-        </div>
-        
-      </div>
-    {% endfor %}
+<section class="page-hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Reach out to the advisory committee, fund administrator, or website team.</p>
   </div>
-</div>
+</section>
 
-    border-radius: 4px;
-  }
-</style>
+<section class="contact-section">
+  <div class="container">
+
+    <!-- Advisory Committee -->
+    <h2 class="section-heading">Advisory Committee</h2>
+    <div class="people-grid">
+      {% assign committee = site.people | where_exp: "p", "p.role contains 'Advisory'" | sort: "order" %}
+      {% for person in committee %}
+      <div class="person-card">
+        <h3>{{ person.name }}</h3>
+        {% if person.organization %}<p class="org">{{ person.organization }}</p>{% endif %}
+        {% if person.address and person.address != "" %}
+          <p class="detail"><i class="icon-location"></i> {{ person.address }}</p>
+        {% endif %}
+        {% if person.email and person.email != "" %}
+          <p class="detail"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+        {% endif %}
+        {% if person.phone and person.phone != "" %}
+          <p class="detail">{{ person.phone }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- The Fund -->
+    <h2 class="section-heading">The Fund</h2>
+    <p class="section-intro">The fund is managed by the Northern Kentucky Fund of the Greater Cincinnati Foundation.</p>
+    <div class="people-grid people-grid--narrow">
+      {% assign fund = site.people | where: "role", "Fund Administrator" %}
+      {% for person in fund %}
+      <div class="person-card person-card--featured">
+        <h3>{{ person.name }}</h3>
+        <p class="person-title">{{ person.role }}</p>
+        {% if person.organization %}<p class="org">{{ person.organization }}</p>{% endif %}
+        {% if person.address and person.address != "" %}
+          <p class="detail">{{ person.address }}</p>
+        {% endif %}
+        {% if person.email and person.email != "" %}
+          <p class="detail"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+        {% endif %}
+        {% if person.phone and person.phone != "" %}
+          <p class="detail">{{ person.phone }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Leadership -->
+    <h2 class="section-heading">Scholarship Leadership</h2>
+    <div class="people-grid people-grid--narrow">
+      {% assign leaders = site.people | where_exp: "p", "p.role contains 'Chairman'" | sort: "order" %}
+      {% for person in leaders %}
+      <div class="person-card person-card--featured">
+        <h3>{{ person.name }}</h3>
+        <p class="person-title">{{ person.role | remove: " / Advisory Committee Member" }}</p>
+        {% if person.organization %}<p class="org">{{ person.organization }}</p>{% endif %}
+        {% if person.address and person.address != "" %}
+          <p class="detail">{{ person.address }}</p>
+        {% endif %}
+        {% if person.email and person.email != "" %}
+          <p class="detail"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+        {% endif %}
+        {% if person.phone and person.phone != "" %}
+          <p class="detail">{{ person.phone }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Website -->
+    <h2 class="section-heading">Website</h2>
+    <div class="people-grid people-grid--narrow">
+      {% assign web = site.people | where: "role", "Webmaster" %}
+      {% for person in web %}
+      <div class="person-card">
+        <h3>{{ person.name }}</h3>
+        <p class="person-title">{{ person.role }}</p>
+        {% if person.organization %}<p class="org">{{ person.organization }}</p>{% endif %}
+        {% if person.email and person.email != "" %}
+          <p class="detail"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+        {% endif %}
+        {% if person.phone and person.phone != "" %}
+          <p class="detail">{{ person.phone }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
