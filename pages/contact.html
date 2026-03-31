@@ -24,45 +24,11 @@ permalink: /contact/
           {% if contact.email %}<p class="email">✉️ <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>{% endif %}
         </div>
         
-        <a href="{{ contact.url | relative_url }}" class="btn">View Details</a>
       </div>
     {% endfor %}
   </div>
 </div>
 
-<style>
-  .contact-page {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-  .contacts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-  }
-  .contact-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
-  .contact-card h2 {
-    margin: 0 0 8px;
-    color: #a00;
-  }
-  .title { font-style: italic; color: #555; margin: 0 0 15px; }
-  .org { font-weight: bold; margin: 0 0 15px; }
-  .contact-details p { margin: 8px 0; }
-  .btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #a00;
-    color: white;
-    text-decoration: none;
     border-radius: 4px;
   }
 </style>
