@@ -4,5 +4,5 @@ role: Advisory Committee Member
 address: ""
 email: ""
 phone: ""
-order: 4
+order: 100
 ---
