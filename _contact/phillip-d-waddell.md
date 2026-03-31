@@ -6,4 +6,4 @@ phone: "(901) 759-0409"
 email: pwaddell@covenantescrow.com
 ---
 
-Phillip D. Waddell serves on the advisory committee.
+Phillip D. Waddell serves on the advisory committee and also serves as Scholarship Vice Chairman.
