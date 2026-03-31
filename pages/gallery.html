@@ -1,0 +1,275 @@
+---
+layout: default
+title: Gallery
+description: Pages from the Highlander yearbook during the Judge Waddell years at Highlands High School, Fort Thomas, Kentucky.
+permalink: /gallery/
+---
+
+<div style="background: var(--navy); padding: 4rem 0 3rem;">
+  <div class="container">
+    <p style="font-family: var(--font-ui); font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin-bottom:.75rem;">The Highlander</p>
+    <h1 style="color:white;">Gallery</h1>
+    <p style="color:rgba(255,255,255,.7); max-width:560px;">Pages from the Highlander yearbook during the Judge Waddell years at Highlands High School, Fort Thomas, Kentucky.</p>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.92); z-index:1000; align-items:center; justify-content:center; flex-direction:column;">
+  <button onclick="closeLightbox()" style="position:absolute; top:1.5rem; right:2rem; background:none; border:none; color:white; font-size:2.5rem; cursor:pointer; line-height:1;">&times;</button>
+  <img id="lightbox-img" src="" alt="" style="max-height:82vh; max-width:88vw; object-fit:contain; border-radius:4px; box-shadow:0 8px 40px rgba(0,0,0,.6);" />
+  <p id="lightbox-caption" style="color:rgba(255,255,255,.65); font-family:'DM Sans',sans-serif; font-size:.85rem; margin-top:.9rem;"></p>
+  <div style="display:flex; gap:1rem; margin-top:.6rem;">
+    <button onclick="prevImage()" style="background:rgba(255,255,255,.12); border:none; color:white; padding:.45rem 1.1rem; border-radius:4px; cursor:pointer; font-size:1.3rem;">&#8592;</button>
+    <button onclick="nextImage()" style="background:rgba(255,255,255,.12); border:none; color:white; padding:.45rem 1.1rem; border-radius:4px; cursor:pointer; font-size:1.3rem;">&#8594;</button>
+  </div>
+</div>
+
+<div class="container" style="padding: 3rem 0 5rem;">
+
+  <!-- Year jump nav -->
+  <div style="display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:3rem;">
+    <a href="#year-1944" class="year-pill">1944</a>
+    <a href="#year-1945" class="year-pill">1945</a>
+    <a href="#year-1946" class="year-pill">1946</a>
+    <a href="#year-1947" class="year-pill">1947</a>
+    <a href="#year-1950" class="year-pill">1950</a>
+    <a href="#year-1952" class="year-pill">1952</a>
+    <a href="#year-1955" class="year-pill">1955</a>
+    <a href="#year-1961" class="year-pill">1961</a>
+    <a href="#year-1962" class="year-pill">1962</a>
+    <a href="#year-1965" class="year-pill">1965</a>
+    <a href="#year-1966" class="year-pill">1966</a>
+    <a href="#year-1967" class="year-pill">1967</a>
+  </div>
+
+  <!-- 1944 -->
+  <div class="gallery-year" id="year-1944">
+    <h2 class="gallery-year__title">1944</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1944 cover.jpg' | relative_url }}" alt="1944 Cover" loading="lazy"/></div><p class="gallery-item__caption">1944 Cover</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1944 page 2.jpg' | relative_url }}" alt="1944 Page 2" loading="lazy"/></div><p class="gallery-item__caption">1944 Page 2</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1944 page 3.jpg' | relative_url }}" alt="1944 Page 3" loading="lazy"/></div><p class="gallery-item__caption">1944 Page 3</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1944 page 4.jpg' | relative_url }}" alt="1944 Page 4" loading="lazy"/></div><p class="gallery-item__caption">1944 Page 4</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1944 page 6.jpg' | relative_url }}" alt="1944 Page 6" loading="lazy"/></div><p class="gallery-item__caption">1944 Page 6</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1944 page 7.jpg' | relative_url }}" alt="1944 Page 7" loading="lazy"/></div><p class="gallery-item__caption">1944 Page 7</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1944 page 8.jpg' | relative_url }}" alt="1944 Page 8" loading="lazy"/></div><p class="gallery-item__caption">1944 Page 8</p></a>
+    </div>
+  </div>
+
+  <!-- 1945 -->
+  <div class="gallery-year" id="year-1945">
+    <h2 class="gallery-year__title">1945</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1945 cover.jpg' | relative_url }}" alt="1945 Cover" loading="lazy"/></div><p class="gallery-item__caption">1945 Cover</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1945 page 1.jpg' | relative_url }}" alt="1945 Page 1" loading="lazy"/></div><p class="gallery-item__caption">1945 Page 1</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/waddell 1945 page 3.jpg' | relative_url }}" alt="1945 Page 3" loading="lazy"/></div><p class="gallery-item__caption">1945 Page 3</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/waddell 1945 page 4.jpg' | relative_url }}" alt="1945 Page 4" loading="lazy"/></div><p class="gallery-item__caption">1945 Page 4</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1945 page 5.jpg' | relative_url }}" alt="1945 Page 5" loading="lazy"/></div><p class="gallery-item__caption">1945 Page 5</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1945 page 7.jpg' | relative_url }}" alt="1945 Page 7" loading="lazy"/></div><p class="gallery-item__caption">1945 Page 7</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1945 page 8.jpg' | relative_url }}" alt="1945 Page 8" loading="lazy"/></div><p class="gallery-item__caption">1945 Page 8</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1945 page 9.jpg' | relative_url }}" alt="1945 Page 9" loading="lazy"/></div><p class="gallery-item__caption">1945 Page 9</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1945 page 10.jpg' | relative_url }}" alt="1945 Page 10" loading="lazy"/></div><p class="gallery-item__caption">1945 Page 10</p></a>
+    </div>
+  </div>
+
+  <!-- 1946 -->
+  <div class="gallery-year" id="year-1946">
+    <h2 class="gallery-year__title">1946</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1946 page 1.jpg' | relative_url }}" alt="1946 Page 1" loading="lazy"/></div><p class="gallery-item__caption">1946 Page 1</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1946 page 2.jpg' | relative_url }}" alt="1946 Page 2" loading="lazy"/></div><p class="gallery-item__caption">1946 Page 2</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1946 page 3.jpg' | relative_url }}" alt="1946 Page 3" loading="lazy"/></div><p class="gallery-item__caption">1946 Page 3</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1946 page 5.jpg' | relative_url }}" alt="1946 Page 5" loading="lazy"/></div><p class="gallery-item__caption">1946 Page 5</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1946 page 6.jpg' | relative_url }}" alt="1946 Page 6" loading="lazy"/></div><p class="gallery-item__caption">1946 Page 6</p></a>
+    </div>
+  </div>
+
+  <!-- 1947 -->
+  <div class="gallery-year" id="year-1947">
+    <h2 class="gallery-year__title">1947</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1947 cover.jpg' | relative_url }}" alt="1947 Cover" loading="lazy"/></div><p class="gallery-item__caption">1947 Cover</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1947 page2.jpg' | relative_url }}" alt="1947 Page 2" loading="lazy"/></div><p class="gallery-item__caption">1947 Page 2</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1947 page 3.jpg' | relative_url }}" alt="1947 Page 3" loading="lazy"/></div><p class="gallery-item__caption">1947 Page 3</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1947 page 4.jpg' | relative_url }}" alt="1947 Page 4" loading="lazy"/></div><p class="gallery-item__caption">1947 Page 4</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1947 page 5.jpg' | relative_url }}" alt="1947 Page 5" loading="lazy"/></div><p class="gallery-item__caption">1947 Page 5</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1947 page 7.jpg' | relative_url }}" alt="1947 Page 7" loading="lazy"/></div><p class="gallery-item__caption">1947 Page 7</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1947 page 8.jpg' | relative_url }}" alt="1947 Page 8" loading="lazy"/></div><p class="gallery-item__caption">1947 Page 8</p></a>
+    </div>
+  </div>
+
+  <!-- 1950 -->
+  <div class="gallery-year" id="year-1950">
+    <h2 class="gallery-year__title">1950</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1950 page 1.jpg' | relative_url }}" alt="1950 Page 1" loading="lazy"/></div><p class="gallery-item__caption">1950 Page 1</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1950 page 2.jpg' | relative_url }}" alt="1950 Page 2" loading="lazy"/></div><p class="gallery-item__caption">1950 Page 2</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1950 page 3.jpg' | relative_url }}" alt="1950 Page 3" loading="lazy"/></div><p class="gallery-item__caption">1950 Page 3</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1950 page 5.jpg' | relative_url }}" alt="1950 Page 5" loading="lazy"/></div><p class="gallery-item__caption">1950 Page 5</p></a>
+    </div>
+  </div>
+
+  <!-- 1952 -->
+  <div class="gallery-year" id="year-1952">
+    <h2 class="gallery-year__title">1952</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell  1952 cover page.jpg' | relative_url }}" alt="1952 Cover" loading="lazy"/></div><p class="gallery-item__caption">1952 Cover</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1952 page 1.jpg' | relative_url }}" alt="1952 Page 1" loading="lazy"/></div><p class="gallery-item__caption">1952 Page 1</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1952 page 2.jpg' | relative_url }}" alt="1952 Page 2" loading="lazy"/></div><p class="gallery-item__caption">1952 Page 2</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1952 page 4.jpg' | relative_url }}" alt="1952 Page 4" loading="lazy"/></div><p class="gallery-item__caption">1952 Page 4</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1952 page 5.jpg' | relative_url }}" alt="1952 Page 5" loading="lazy"/></div><p class="gallery-item__caption">1952 Page 5</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1952 page 6.jpg' | relative_url }}" alt="1952 Page 6" loading="lazy"/></div><p class="gallery-item__caption">1952 Page 6</p></a>
+    </div>
+  </div>
+
+  <!-- 1955 -->
+  <div class="gallery-year" id="year-1955">
+    <h2 class="gallery-year__title">1955</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1955 cover page.jpg' | relative_url }}" alt="1955 Cover" loading="lazy"/></div><p class="gallery-item__caption">1955 Cover</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1955 page 1.jpg' | relative_url }}" alt="1955 Page 1" loading="lazy"/></div><p class="gallery-item__caption">1955 Page 1</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1955 page 2.jpg' | relative_url }}" alt="1955 Page 2" loading="lazy"/></div><p class="gallery-item__caption">1955 Page 2</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1955 page 4.jpg' | relative_url }}" alt="1955 Page 4" loading="lazy"/></div><p class="gallery-item__caption">1955 Page 4</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1955 page 5.jpg' | relative_url }}" alt="1955 Page 5" loading="lazy"/></div><p class="gallery-item__caption">1955 Page 5</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1955 page 6.jpg' | relative_url }}" alt="1955 Page 6" loading="lazy"/></div><p class="gallery-item__caption">1955 Page 6</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1955 page 8.jpg' | relative_url }}" alt="1955 Page 8" loading="lazy"/></div><p class="gallery-item__caption">1955 Page 8</p></a>
+    </div>
+  </div>
+
+  <!-- 1961 -->
+  <div class="gallery-year" id="year-1961">
+    <h2 class="gallery-year__title">1961</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1961 cover page.jpg' | relative_url }}" alt="1961 Cover" loading="lazy"/></div><p class="gallery-item__caption">1961 Cover</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1961 page 1.jpg' | relative_url }}" alt="1961 Page 1" loading="lazy"/></div><p class="gallery-item__caption">1961 Page 1</p></a>
+    </div>
+  </div>
+
+  <!-- 1962 -->
+  <div class="gallery-year" id="year-1962">
+    <h2 class="gallery-year__title">1962</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell  1962 cover page.jpg' | relative_url }}" alt="1962 Cover" loading="lazy"/></div><p class="gallery-item__caption">1962 Cover</p></a>
+    </div>
+  </div>
+
+  <!-- 1965 -->
+  <div class="gallery-year" id="year-1965">
+    <h2 class="gallery-year__title">1965</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1965 cover page.jpg' | relative_url }}" alt="1965 Cover" loading="lazy"/></div><p class="gallery-item__caption">1965 Cover</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1965 page 1.jpg' | relative_url }}" alt="1965 Page 1" loading="lazy"/></div><p class="gallery-item__caption">1965 Page 1</p></a>
+    </div>
+  </div>
+
+  <!-- 1966 -->
+  <div class="gallery-year" id="year-1966">
+    <h2 class="gallery-year__title">1966</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1966 cover page.jpg' | relative_url }}" alt="1966 Cover" loading="lazy"/></div><p class="gallery-item__caption">1966 Cover</p></a>
+    </div>
+  </div>
+
+  <!-- 1967 -->
+  <div class="gallery-year" id="year-1967">
+    <h2 class="gallery-year__title">1967</h2>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1967 cover page.jpg' | relative_url }}" alt="1967 Cover" loading="lazy"/></div><p class="gallery-item__caption">1967 Cover</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1967 page 1.jpg' | relative_url }}" alt="1967 Page 1" loading="lazy"/></div><p class="gallery-item__caption">1967 Page 1</p></a>
+      <a href="#" class="gallery-item" onclick="openLightbox(this);return false;"><div class="gallery-item__img"><img src="{{ '/assets/img/gallery/Waddell 1967 page 2.jpg' | relative_url }}" alt="1967 Page 2" loading="lazy"/></div><p class="gallery-item__caption">1967 Page 2</p></a>
+    </div>
+  </div>
+
+</div>
+
+<style>
+.year-pill {
+  font-family: var(--font-ui);
+  font-size: .8rem;
+  font-weight: 500;
+  padding: .35rem .85rem;
+  border-radius: 999px;
+  background: var(--gold-pale);
+  color: var(--navy);
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.year-pill:hover { background: var(--gold); color: var(--navy-dark); }
+.gallery-year { margin-bottom: 3.5rem; }
+.gallery-year__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--navy);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: .5rem;
+  margin-bottom: 1.5rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 1rem;
+}
+.gallery-item {
+  display: block;
+  text-decoration: none;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--gray-100);
+  box-shadow: var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+  cursor: zoom-in;
+}
+.gallery-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.gallery-item__img { aspect-ratio: 3/4; overflow: hidden; }
+.gallery-item__img img { width:100%; height:100%; object-fit:cover; transition:transform .3s; }
+.gallery-item:hover .gallery-item__img img { transform: scale(1.04); }
+.gallery-item__caption {
+  font-family: var(--font-ui);
+  font-size: .72rem;
+  color: var(--gray-700);
+  padding: .4rem .6rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+</style>
+
+<script>
+const allItems = Array.from(document.querySelectorAll('.gallery-item')).map(el => ({
+  src: el.querySelector('img').src,
+  caption: el.querySelector('.gallery-item__caption').textContent
+}));
+let currentIndex = 0;
+
+function openLightbox(el) {
+  const src = el.querySelector('img').src;
+  const caption = el.querySelector('.gallery-item__caption').textContent;
+  currentIndex = allItems.findIndex(i => i.src === src);
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox-caption').textContent = caption;
+  document.getElementById('lightbox').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = '';
+}
+function showIndex(i) {
+  currentIndex = (i + allItems.length) % allItems.length;
+  document.getElementById('lightbox-img').src = allItems[currentIndex].src;
+  document.getElementById('lightbox-caption').textContent = allItems[currentIndex].caption;
+}
+function nextImage() { showIndex(currentIndex + 1); }
+function prevImage() { showIndex(currentIndex - 1); }
+document.addEventListener('keydown', e => {
+  if (document.getElementById('lightbox').style.display === 'flex') {
+    if (e.key === 'ArrowRight') nextImage();
+    if (e.key === 'ArrowLeft') prevImage();
+    if (e.key === 'Escape') closeLightbox();
+  }
+});
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+</script>
