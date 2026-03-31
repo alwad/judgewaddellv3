@@ -14,6 +14,26 @@ permalink: /contact/
 <section class="contact-section">
   <div class="container">
 
+    <!-- Leadership -->
+    <h2 class="section-heading">Scholarship Leadership</h2>
+    <div class="people-grid people-grid--narrow">
+      {% assign leaders = site.people | where_exp: "p", "p.role contains 'Chairman'" | sort: "order" %}
+      {% for person in leaders %}
+      <div class="person-card person-card--featured">
+        <h3>{{ person.name }}</h3>
+        <p class="person-title">{{ person.role | remove: " / Advisory Committee Member" }}</p>
+        {% if person.organization %}<p class="org">{{ person.organization }}</p>{% endif %}
+        {% if person.address and person.address != "" %}
+          <p class="detail">{{ person.address }}</p>
+        {% endif %}
+        <p class="detail"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+        {% if person.phone and person.phone != "" %}
+          <p class="detail">{{ person.phone }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+        
     <!-- Advisory Committee -->
     <h2 class="section-heading">Advisory Committee</h2>
     <div class="people-grid">
@@ -48,31 +68,7 @@ permalink: /contact/
         {% if person.address and person.address != "" %}
           <p class="detail">{{ person.address }}</p>
         {% endif %}
-        {% if person.email and person.email != "" %}
-          <p class="detail"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
-        {% endif %}
-        {% if person.phone and person.phone != "" %}
-          <p class="detail">{{ person.phone }}</p>
-        {% endif %}
-      </div>
-      {% endfor %}
-    </div>
-
-    <!-- Leadership -->
-    <h2 class="section-heading">Scholarship Leadership</h2>
-    <div class="people-grid people-grid--narrow">
-      {% assign leaders = site.people | where_exp: "p", "p.role contains 'Chairman'" | sort: "order" %}
-      {% for person in leaders %}
-      <div class="person-card person-card--featured">
-        <h3>{{ person.name }}</h3>
-        <p class="person-title">{{ person.role | remove: " / Advisory Committee Member" }}</p>
-        {% if person.organization %}<p class="org">{{ person.organization }}</p>{% endif %}
-        {% if person.address and person.address != "" %}
-          <p class="detail">{{ person.address }}</p>
-        {% endif %}
-        {% if person.email and person.email != "" %}
-          <p class="detail"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
-        {% endif %}
+        <p class="detail"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
         {% if person.phone and person.phone != "" %}
           <p class="detail">{{ person.phone }}</p>
         {% endif %}
