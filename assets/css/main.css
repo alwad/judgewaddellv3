@@ -792,3 +792,84 @@ blockquote {
   .site-footer__bottom { flex-direction: column; gap: .75rem; text-align: center; }
   .scholars-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ============================================
+   PAGE — CONTACT / PEOPLE
+   ============================================ */
+.page-hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 4rem 0 3rem;
+  margin-bottom: 3rem;
+}
+.page-hero h1 { color: var(--white); margin-bottom: .5rem; }
+.page-hero p { color: rgba(255,255,255,.7); max-width: 540px; }
+
+.contact-section { padding: 3rem 0 5rem; }
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--navy);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: .5rem;
+  margin: 3rem 0 1.5rem;
+}
+.contact-section .section-heading:first-child { margin-top: 0; }
+
+.section-intro {
+  color: var(--gray-700);
+  font-size: .95rem;
+  margin-bottom: 1.5rem;
+  margin-top: -.75rem;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+.people-grid--narrow {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.person-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.6rem;
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--gray-200);
+}
+.person-card--featured {
+  border-top-color: var(--gold);
+}
+.person-card h3 {
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin-bottom: .25rem;
+}
+.person-card .person-title {
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .6rem;
+}
+.person-card .org {
+  font-family: var(--font-ui);
+  font-size: .85rem;
+  color: var(--gray-700);
+  margin-bottom: .6rem;
+}
+.person-card .detail {
+  font-size: .875rem;
+  color: var(--gray-700);
+  line-height: 1.5;
+  margin-bottom: .35rem;
+}
+.person-card .detail a { color: var(--gold); }
+.person-card .detail a:hover { color: var(--gold-light); }
+
